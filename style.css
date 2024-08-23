@@ -1,0 +1,503 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #111;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    background-color: #000;
+    padding: 10px 60px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.image1 img {
+    max-width: 170px;
+}
+
+.block {
+    display: flex;
+    padding-top: 20px;
+    /* justify-content: space-around; */
+    /* justify-content: flex-start; */
+    align-items: center;
+    margin-left: 200px;
+}
+
+.block li {
+    list-style: none;
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+.btn-div {
+    color: #fff;
+    margin-left: 30px;
+}
+
+.btn1 {
+    padding: 15px 10px;
+    border-radius: 30px;
+    font-size: 14px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.btn3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.btn3 button {
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-size: 14px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.btn2 {
+    padding: 15px 15px;
+    margin-left: 10px;
+    border-radius: 30px;
+    font-size: 14px;
+    background-color: red;
+    color: #fff;
+}
+
+.block1 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#slider {
+    /* display: none; */
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.61);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 350px;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    height: auto;
+    z-index: 999;
+    transition: 1.5s;
+}
+
+.active #slider {
+    left: calc(100% - 350px);
+}
+
+.slider1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* padding-top: 100px; */
+    /* justify-content: center; */
+}
+
+.slider1 li {
+    list-style: none;
+    font-size: 25px;
+    margin: 10px 0px;
+    border-bottom: 1px solid #000;
+    width: 80%;
+}
+
+#click {
+    display: none;
+}
+
+.clear {
+    margin-top: 50px;
+    position: relative;
+    left: 80%;
+}
+
+.clear .fa-solid {
+    font-size: 25px;
+}
+
+@media only screen and (max-width: 1230px) {
+    .navbar {
+        padding: 20px 50px;
+        display: flex;
+        justify-content: center;
+    }
+    .navbar img {
+        width: 150px;
+    }
+    .block {
+        display: none;
+    }
+    .btn-div {
+        display: none;
+    }
+    .navbar button {
+        margin: 0px;
+        font-size: 10px;
+        padding: 15px;
+    }
+    #click {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .navbar img {
+        width: 50px;
+    }
+    .navbar button {
+        padding: 10px;
+        /* font-size: 5px; */
+    }
+}
+
+.mein-salt {
+    background-color: #000;
+    padding-top: 100px;
+    overflow-x: hidden;
+}
+
+.mein-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 100px;
+    padding-top: 20px;
+    /* flex-direction: column; */
+    /* width: 50%; */
+}
+
+.image-div img {
+    width: 250px;
+    background-color: #fff;
+    padding: 15px;
+}
+
+.salt {
+    text-align: center;
+    color: #fff;
+    margin: 20px;
+}
+
+.salt p {
+    color: #888;
+    margin-bottom: 30px;
+    /* padding-bottom: 40px; */
+}
+
+.mein-img::-webkit-scrollbar {
+    width: 0px;
+}
+
+@media only screen and (max-width: 930px) {
+    .mein-img {
+        /* flex-grow: inherit; */
+        display: flex;
+        justify-self: start;
+        margin: 0px 20px;
+        margin-left: 40px;
+        overflow-x: auto;
+        /* width: 50%; */
+    }
+}
+
+
+/* mein-islamabad */
+
+.mein-islamabad {
+    /* text-align: center; */
+    background-color: #111;
+    height: auto;
+    overflow: hidden;
+}
+
+.isl-h1 {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.isl-h1 h1 {
+    color: #fff;
+}
+
+.isl-h1 p {
+    color: #999;
+}
+
+.islababad {
+    padding: 100px 0px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.islamabad-div1 h2 {
+    color: red;
+}
+
+.islamabad-div1 h1 {
+    color: #fff;
+}
+
+.islamabad-div1 {
+    color: #999;
+}
+
+@media only screen and (max-width:600px) {
+    .islamabad-div2 img {
+        width: 300px;
+    }
+    .islababad {
+        padding: 40px;
+    }
+}
+
+.isl-img {
+    position: relative;
+}
+
+.isl-img img {
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+}
+
+.btn4 {
+    margin: 20px 0px;
+}
+
+.btn4 button {
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-size: 14px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+
+/* faslabad div */
+
+.faslabad {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* margin-bottom: 50px;
+   padding-bottom: 50px; */
+}
+
+@media only screen and (max-width:600px) {
+    .faslabad img {
+        width: 300px;
+        margin-bottom: 40px;
+    }
+    .faslabad {
+        padding: 40px;
+    }
+}
+
+
+/* bahawalput div */
+
+.bahawalpur {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (max-width:600px) {
+    .bahawalpur img {
+        width: 300px;
+        /* margin-bottom: 10px; */
+    }
+    .bahawalpur {
+        /* margin-top: 0px; */
+        padding: 40px;
+    }
+}
+
+.mein-paper {
+    background-color: #000;
+    color: #fff;
+}
+
+.paper1 {
+    padding: 50px 0px;
+}
+
+.paper-img {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.paper-img img {
+    width: 350px;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.paper h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.names {
+    text-align: center;
+}
+
+.names h5 {
+    color: red;
+}
+
+.names p {
+    color: #999;
+}
+
+.vilage {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.mein-village {
+    background-color: #111;
+}
+
+.mein-village h1 {
+    color: aliceblue;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.vilage1 img {
+    width: 600px;
+    /* justify-content: space-evenly; */
+}
+
+@media only screen and (max-width:600px) {
+    .vilage1 img {
+        width: 300px;
+        margin-bottom: 30px;
+    }
+    .vilage {
+        padding: 40px;
+    }
+}
+
+.mein-expres {
+    background-color: #000;
+    padding-bottom: 50px;
+}
+
+.mein-expres h1 {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    color: #fff;
+    text-align: center;
+}
+
+.expres2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.express {
+    text-align: center;
+    background-color: aliceblue;
+    padding: 20px 70px;
+    border-radius: 5px;
+    padding-top: 40px;
+}
+
+.images-dives {
+    /* padding: 0px 50px; */
+    /* width: 100%; */
+    margin: 0px 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+.images-dives::-webkit-scrollbar {
+    width: 0px;
+}
+
+.valige-img {
+    display: flex;
+    justify-content: center;
+}
+
+.valige-img img {
+    width: 260px;
+    height: 200px;
+}
+
+.mein-last {
+    background-color: #111;
+}
+
+.mein-last h6 {
+    color: #fff;
+    text-align: right;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+}
+
+.lastest {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    color: #999;
+    padding: 50px 50px;
+}
+
+.lastest ul li {
+    list-style: none;
+}
+
+.lastest b {
+    color: #fff;
+}
+
+.last1 img {
+    width: 150px;
+}
+
+.lstest-img p {
+    color: #fff;
+}
+
+@media only screen and (max-width: 400px) {
+    .last2 {
+        display: none;
+    }
+    .last1 {
+        text-align: center;
+    }
+    .mein-last h6{
+        text-align: center;
+    }
+}
